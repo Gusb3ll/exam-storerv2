@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.page-enter-active {
+  transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.page-leave-active {
+  transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.page-enter, .page-leave-to
+{
+  transform: translateY(1.5vh);
+  opacity: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+  border-bottom-right-radius: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+
+.scroll::-webkit-scrollbar {
+  width: 12px;
+  background-color: #0000002f;
+  border-radius: 8px;
+}
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.575);
+}
