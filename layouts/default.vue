@@ -1,7 +1,10 @@
 <template>
   <div class="flex h-screen overflow-hidden bg-gray-50 dark:bg-hsl-back">
-    <div class="flex">
-      <NavMain />
+    <div class="hidden xl:flex">
+      <NavDesktopMain />
+    </div>
+    <div class="xl:hidden flex">
+      <NavMobileMain />
     </div>
     <div class="relative flex flex-col flex-1 w-0 overflow-hidden">
       <main

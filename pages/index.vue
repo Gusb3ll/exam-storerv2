@@ -36,10 +36,10 @@ export default {
       this.loading = true
       await this.owo()
       this.loading = false
-    },
-    async owo () {
-      await this.$store.commit('main/warning', 'Website is still under development')
     }
+    // async owo () {
+    //   await this.$store.commit('main/warning', 'Website is still under development')
+    // }
   }
 }
 </script>
