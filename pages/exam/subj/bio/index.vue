@@ -80,7 +80,7 @@ export default {
     }
   },
   head: {
-    title: 'Chm'
+    title: 'Bio'
   },
   async created () {
     await this.FetchDB()

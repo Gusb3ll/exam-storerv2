@@ -92,7 +92,7 @@ export default {
     }
   },
   head: {
-    title: 'Chm'
+    title: 'Bio'
   },
   methods: {
     sleep (ms) {
