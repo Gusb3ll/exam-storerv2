@@ -11,14 +11,29 @@
           <div>
             <label for="Key" class="sr-only">Key</label>
             <input
-              id="seearch"
+              id="search"
               v-model="search"
               type="text"
               name="search"
-              class="search-input"
+              class="input"
               placeholder="Exam key"
-              @change="handleSearch"
             >
+          </div>
+          <div class="pt-4">
+            <button
+              class="search-button"
+              :class="{
+                'transition-all opacity-80 pointer-events-none': loading
+              }"
+              @click="handleSearch"
+            >
+              <template v-if="loading">
+                Loading
+              </template>
+              <template v-else>
+                Search
+              </template>
+            </button>
           </div>
           <div class="pt-4">
             <nuxt-link to="/exam/subj/mth/add">
@@ -41,7 +56,12 @@
       </div>
       <div class="mt-8">
         <h1 class="text-3xl text-center font-500">
-          Output
+          Answer
+        </h1>
+        <h1 v-if="search" class="text-3xl text-center font-500 mt-4">
+          <div v-for="i in result" :key="i.ans">
+            {{ i.ans }}
+          </div>
         </h1>
       </div>
     </div>
@@ -55,6 +75,7 @@ export default {
     return {
       search: '',
       exam: null,
+      result: null,
       loading: false
     }
   },
@@ -62,39 +83,33 @@ export default {
     title: 'Mth'
   },
   async created () {
-    await this.fetchDB
+    await this.FetchDB()
   },
   methods: {
-    handleSearch () {
-      if (this.search !== '') {
-        return true
-      }
+    async handleSearch () {
+      this.loading = true
+      const { data } = await this.$supabase.from('mth').select('ans').range(0, 0).eq('key', this.search)
+      this.result = data
+      this.loading = false
+    },
+    async FetchDB () {
+      this.loading = true
+      const { data } = await this.$supabase.from('mth').select('*')
+      this.exam = data
+      this.loading = false
     }
-  },
-  async fetchDB () {
-    this.load = true
-    const { data } = await this.$supabase
-      .from('mth')
-      .select()
-      .eq('key', '0')
-    this.exam = data
-    this.handleSearch()
-    this.load = false
   }
 }
 </script>
 
 <style>
 .search-button {
-  @apply relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md group hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+  @apply relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
 }
 .add-button {
-  @apply relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-green-500 border border-transparent rounded-md group hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+  @apply relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-green-500 border border-transparent rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
 }
-.search-input {
+.input {
   @apply relative block w-full px-3 py-4 text-gray-900 placeholder-gray-500 bg-gray-200 rounded-sm appearance-none dark:bg-black dark:bg-opacity-20 dark:text-white dark:placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm;
-}
-.auth-title {
-  @apply mt-6 text-3xl font-extrabold text-center text-gray-900 dark:text-white;
 }
 </style>
