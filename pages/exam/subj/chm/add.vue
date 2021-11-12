@@ -3,7 +3,7 @@
     <div class="mx-auto">
       <div class="my-8">
         <h1 class="text-4xl text-center font-500">
-          Add answer for Math
+          Add answer for Chemistry
         </h1>
       </div>
       <div class="mt-8 space-y-6">
