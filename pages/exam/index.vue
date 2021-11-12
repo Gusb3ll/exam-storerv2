@@ -27,54 +27,54 @@ export default {
       subjects: [
         {
           id: 1,
-          title: 'คณิตศาสตร์',
+          title: 'คณิตศาสตร์ ✓',
           to: '/exam/subj/mth'
         },
         {
           id: 2,
-          title: 'ฟิสิกส์',
+          title: 'ฟิสิกส์ ✓',
           to: '/exam/subj/phy'
         },
         {
           id: 3,
-          title: 'ชีววิทยา',
+          title: 'ชีววิทยา ✓',
           to: '/exam/subj/bio'
         },
         {
           id: 4,
-          title: 'เคมี',
+          title: 'เคมี ✓',
           to: '/exam/subj/chm'
         },
-        {
-          id: 5,
-          title: 'สังคมศึกษา',
-          to: '/exam/subj/soc'
-        },
+        // {
+        //   id: 5,
+        //   title: 'สังคมศึกษา',
+        //   to: '/exam/subj/soc'
+        // },
         {
           id: 6,
-          title: 'ไทย',
+          title: 'ไทย ✓',
           to: '/exam/subj/tha'
         },
         {
           id: 7,
-          title: 'อังกฤษ',
+          title: 'อังกฤษ ✓',
           to: '/exam/subj/eng'
         },
-        {
-          id: 8,
-          title: 'สุขศึกษา',
-          to: '/exam/subj/s1'
-        },
-        {
-          id: 9,
-          title: 'พลศึกษา',
-          to: '/exam/subj/s2'
-        },
-        {
-          id: 10,
-          title: 'ฟิสิกส์ - 2560',
-          to: '/exam/subj/phy2560'
-        },
+        // {
+        //   id: 8,
+        //   title: 'สุขศึกษา',
+        //   to: '/exam/subj/s1'
+        // },
+        // {
+        //   id: 9,
+        //   title: 'พลศึกษา',
+        //   to: '/exam/subj/s2'
+        // },
+        // {
+        //   id: 10,
+        //   title: 'ฟิสิกส์ - 2560',
+        //   to: '/exam/subj/phy2560'
+        // },
         {
           id: 11,
           title: 'วิทยาศาสตร์',
@@ -84,17 +84,17 @@ export default {
           id: 12,
           title: 'ดาราศาสตร์',
           to: '/exam/subj/ast'
-        },
-        {
-          id: 13,
-          title: 'สังคมศึกษา - thk',
-          to: '/exam/subj/socThk'
-        },
-        {
-          id: 14,
-          title: 'เทคโนโลยี',
-          to: '/exam/subj/techno'
         }
+        // {
+        //   id: 13,
+        //   title: 'สังคมศึกษา - thk',
+        //   to: '/exam/subj/socThk'
+        // },
+        // {
+        //   id: 14,
+        //   title: 'เทคโนโลยี',
+        //   to: '/exam/subj/techno'
+        // }
       ]
     }
   },
