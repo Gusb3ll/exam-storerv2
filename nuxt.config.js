@@ -50,9 +50,19 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  serverMiddleware: [
+    { path: '/api/rest', handler: '~/server-middleware/rest.js' }
+  ],
+
+  router: {
+    middleware: ['user-auth']
   }
 }

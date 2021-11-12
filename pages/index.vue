@@ -6,7 +6,7 @@
       </div>
       <div class="my-auto">
         <h1 class="text-xl font-semibold text-gray-600 dark:text-gray-400">
-          Exam storer
+          Exam storage
         </h1>
         <h1 class="text-sm font-medium text-gray-500 dark:text-gray-300">
           By Gusbell
@@ -14,8 +14,11 @@
       </div>
     </div>
 
-    <div class="absolute flex items-center justify-center opacity-10 dark:hidden">
-
+    <div class="absolute flex items-center justify-center opacity-15 dark:hidden">
+      <img
+        src="~/assets/hina.png"
+        class="w-256"
+      >
     </div>
   </div>
 </template>

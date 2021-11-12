@@ -27,11 +27,7 @@
                 </nuxt-link>
 
                 <template v-if="$store.state.auth.user">
-                  <nuxt-link to="/Home">
-                    <a class="nav-button">
-                      <ServerIcon class="icon" /> Dashboard</a>
-                  </nuxt-link>
-                  <nuxt-link to="/list">
+                  <nuxt-link to="/exam/">
                     <a class="nav-button">
                       <ArchiveIcon class="icon" /> Exams</a>
                   </nuxt-link>

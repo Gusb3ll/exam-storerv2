@@ -96,7 +96,7 @@ export default {
     handleRedirect (event) {
       switch (event) {
         case 'SIGNED_IN':
-          this.$router.push('/dashboard')
+          this.$router.push('/')
           break
       }
     },

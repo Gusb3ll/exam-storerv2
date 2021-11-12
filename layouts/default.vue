@@ -15,11 +15,18 @@
         <Nuxt />
       </main>
 
-      <footer class="py-1 text-center bottom-1">
-        <h1 class="text-gray-500 text-md">
-          © 2021 Varkaria & Gusbell
+      <footer class="footer relative py-1 bottom-1">
+        <h1 class="text-gray-500 text-md text-center">
+          © 2021 | Kitpipat Jaritwong
         </h1>
       </footer>
     </div>
   </div>
 </template>
+
+<style scoped>
+.footer {
+  left: 50%;
+  transform: translateX(-55%);
+}
+</style>

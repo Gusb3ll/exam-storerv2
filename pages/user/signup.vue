@@ -129,7 +129,7 @@ export default {
     handleRedirect (event) {
       switch (event) {
         default:
-          alert({ event })
+          this.$router.push('/')
           break
       }
     },

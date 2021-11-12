@@ -3,11 +3,9 @@
     <div class="flex items-center justify-between mb-4">
       <div class="flex items-center gap-2 text-gray-800 dark:text-white">
         <template v-if="$store.state.auth.user">
-          <EleProfileAvatar size="3rem" />
-          <h2 class="text-sm">
-            👋 Hi
+          <h2 class="text-sm ml-6">
             <b class="font-semibold">{{
-              $store.state.auth.userprofile.display_name
+              $store.state.auth.user.email
             }}</b>
           </h2>
         </template>
