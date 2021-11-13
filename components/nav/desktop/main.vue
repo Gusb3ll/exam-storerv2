@@ -33,7 +33,7 @@
                   </nuxt-link>
                   <nuxt-link to="/log">
                     <a class="nav-button">
-                      <ArchiveIcon class="icon" /> Updates</a>
+                      <CheckIcon class="icon" /> Updates</a>
                   </nuxt-link>
                 </template>
               </div>

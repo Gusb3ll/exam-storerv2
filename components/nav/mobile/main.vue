@@ -61,6 +61,10 @@
                       <a class="nav-button">
                         <ArchiveIcon class="icon" /> Exams</a>
                     </nuxt-link>
+                    <nuxt-link to="/log">
+                      <a class="nav-button">
+                        <CheckIcon class="icon" /> Updates</a>
+                    </nuxt-link>
                   </template>
                 </div>
               </div>
