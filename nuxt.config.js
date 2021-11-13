@@ -52,7 +52,7 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     baseURL: 'https://exam.gusbell.tech', // Used as fallback if no runtime config is provide
-    https: false
+    https: true
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
