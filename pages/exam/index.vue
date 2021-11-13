@@ -27,37 +27,37 @@ export default {
       subjects: [
         {
           id: 1,
-          title: 'คณิตศาสตร์ ✓',
+          title: 'คณิตศาสตร์',
           to: '/exam/subj/mth'
         },
         {
           id: 2,
-          title: 'ฟิสิกส์ ✓',
+          title: 'ฟิสิกส์',
           to: '/exam/subj/phy'
         },
         {
           id: 3,
-          title: 'ชีววิทยา ✓',
+          title: 'ชีววิทยา',
           to: '/exam/subj/bio'
         },
         {
           id: 4,
-          title: 'เคมี ✓',
+          title: 'เคมี',
           to: '/exam/subj/chm'
         },
-        // {
-        //   id: 5,
-        //   title: 'สังคมศึกษา',
-        //   to: '/exam/subj/soc'
-        // },
+        {
+          id: 5,
+          title: 'สังคมศึกษา',
+          to: '/exam/subj/soc'
+        },
         {
           id: 6,
-          title: 'ไทย ✓',
+          title: 'ไทย',
           to: '/exam/subj/tha'
         },
         {
           id: 7,
-          title: 'อังกฤษ ✓',
+          title: 'อังกฤษ',
           to: '/exam/subj/eng'
         },
         // {
@@ -79,12 +79,12 @@ export default {
           id: 11,
           title: 'วิทยาศาสตร์',
           to: '/exam/subj/sci'
-        },
-        {
-          id: 12,
-          title: 'ดาราศาสตร์',
-          to: '/exam/subj/ast'
         }
+        // {
+        //   id: 12,
+        //   title: 'ดาราศาสตร์',
+        //   to: '/exam/subj/ast'
+        // }
         // {
         //   id: 13,
         //   title: 'สังคมศึกษา - thk',
