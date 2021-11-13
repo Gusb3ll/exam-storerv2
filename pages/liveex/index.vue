@@ -24,8 +24,8 @@
               <div>
                 {{ i.qe }}
               </div>
-              <div>
-                {{ i.ans }}
+              <div class="pt-2">
+                Ans : {{ i.ans }}
               </div>
             </div>
           </div>
