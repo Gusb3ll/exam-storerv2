@@ -25,7 +25,10 @@
                 <nuxt-link to="/">
                   <a class="nav-button"> <HomeIcon class="icon" /> Home</a>
                 </nuxt-link>
-
+                <nuxt-link to="/liveex/">
+                  <a class="nav-button">
+                    <AnnotationIcon class="icon" /> LiveExam</a>
+                </nuxt-link>
                 <template v-if="$store.state.auth.user">
                   <nuxt-link to="/exam/">
                     <a class="nav-button">
@@ -52,13 +55,15 @@
 import {
   HomeIcon,
   CheckIcon,
-  ArchiveIcon
+  ArchiveIcon,
+  AnnotationIcon
 } from '@vue-hero-icons/outline'
 export default {
   components: {
     HomeIcon,
     CheckIcon,
-    ArchiveIcon
+    ArchiveIcon,
+    AnnotationIcon
   },
   computed: {
     user () {
