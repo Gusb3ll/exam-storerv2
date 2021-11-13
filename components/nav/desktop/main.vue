@@ -31,6 +31,10 @@
                     <a class="nav-button">
                       <ArchiveIcon class="icon" /> Exams</a>
                   </nuxt-link>
+                  <nuxt-link to="/log">
+                    <a class="nav-button">
+                      <ArchiveIcon class="icon" /> Updates</a>
+                  </nuxt-link>
                 </template>
               </div>
             </div>
@@ -47,11 +51,13 @@
 <script>
 import {
   HomeIcon,
+  CheckIcon,
   ArchiveIcon
 } from '@vue-hero-icons/outline'
 export default {
   components: {
     HomeIcon,
+    CheckIcon,
     ArchiveIcon
   },
   computed: {
