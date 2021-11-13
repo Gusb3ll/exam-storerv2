@@ -82,11 +82,13 @@
 <script>
 import {
   HomeIcon,
-  ArchiveIcon
+  ArchiveIcon,
+  CheckIcon
 } from '@vue-hero-icons/outline'
 export default {
   components: {
     HomeIcon,
+    CheckIcon,
     ArchiveIcon
   },
   data () {
