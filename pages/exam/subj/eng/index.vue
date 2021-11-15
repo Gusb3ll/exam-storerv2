@@ -36,7 +36,7 @@
             </button>
           </div>
           <div class="pt-4">
-            <nuxt-link to="/exam/subj/tha/add">
+            <nuxt-link to="/exam/subj/eng/add">
               <button
                 class="add-button"
                 :class="{
