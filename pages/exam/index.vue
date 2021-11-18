@@ -79,12 +79,12 @@ export default {
           id: 11,
           title: 'วิทยาศาสตร์',
           to: '/exam/subj/sci'
+        },
+        {
+          id: 12,
+          title: 'ดาราศาสตร์',
+          to: '/exam/subj/ast'
         }
-        // {
-        //   id: 12,
-        //   title: 'ดาราศาสตร์',
-        //   to: '/exam/subj/ast'
-        // }
         // {
         //   id: 13,
         //   title: 'สังคมศึกษา - thk',
