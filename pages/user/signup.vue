@@ -109,6 +109,7 @@ export default {
   methods: {
     async handleAuth () {
       this.loading = true
+      await this.signUp()
       await this.showFlash()
       this.loading = false
     },

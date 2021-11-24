@@ -2,16 +2,18 @@
   <div class="flex h-screen">
     <div class="mx-auto">
       <div class="my-8">
-        <h1 class="text-4xl text-center font-500 certTitlefadein">
+        <h1 class="text-4xl text-center font-500 examIndexanim1">
           Please select subjects
         </h1>
       </div>
       <div class="grid grid-cols-5 grid-flow-row gap-x-12 gap-y-12 mt-16">
         <div v-for="i in subjects" :key="i.id">
           <nuxt-link :to="i.to">
-            <a class="text-xl">
-              {{ i.title }}
-            </a>
+            <div class="examIndexanim2 text-center py-4 px-1 bg-white shadow-lg rounded-lg">
+              <a class="text-xl">
+                {{ i.title }}
+              </a>
+            </div>
           </nuxt-link>
         </div>
       </div>
@@ -100,6 +102,32 @@ export default {
   },
   head: {
     title: 'Please select your subjects'
+  },
+  mounted () {
+    this.examIndexanim1()
+    this.examIndexanim2()
+  },
+  methods: {
+    examIndexanim1 () {
+      this.$anime({
+        targets: '.examIndexanim1',
+        opacity: [0, 1],
+        translateY: [50, 0],
+        duration: 775,
+        delay: 0,
+        easing: 'easeOutQuint'
+      })
+    },
+    examIndexanim2 () {
+      this.$anime({
+        targets: '.examIndexanim2',
+        opacity: [0, 1],
+        translateY: [25, 0],
+        duration: 775,
+        delay: (el, i) => 300 + i * 100,
+        easing: 'easeOutQuint'
+      })
+    }
   }
 }
 </script>
