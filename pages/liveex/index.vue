@@ -31,23 +31,25 @@
           </div>
 
           <div>
-            <div class="pt-4">
-              <nuxt-link to="/liveex/add">
-                <button
-                  class="add-button"
-                  :class="{
-                    'transition-all opacity-80 pointer-events-none': loading
-                  }"
-                >
-                  <template v-if="loading">
-                    Loading
-                  </template>
-                  <template v-else>
-                    Add
-                  </template>
-                </button>
-              </nuxt-link>
-            </div>
+            <template v-if="$store.state.auth.user">
+              <div class="pt-4">
+                <nuxt-link to="/liveex/add">
+                  <button
+                    class="add-button"
+                    :class="{
+                      'transition-all opacity-80 pointer-events-none': loading
+                    }"
+                  >
+                    <template v-if="loading">
+                      Loading
+                    </template>
+                    <template v-else>
+                      Add
+                    </template>
+                  </button>
+                </nuxt-link>
+              </div>
+            </template>
             <div class="pt-4">
               <button
                 class="search-button"

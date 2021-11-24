@@ -101,6 +101,7 @@ export default {
     }
   },
   created () {
+    this.handleAuth()
     this.$supabase.auth.onAuthStateChange(async (event, session) => {
       await this.request({ event, session })
     })
@@ -108,12 +109,12 @@ export default {
   methods: {
     async handleAuth () {
       this.loading = true
-      await this.signUp()
+      await this.showFlash()
       this.loading = false
     },
     async signUp () {
       const { email, password, passwordConfirm, inviteCode } = this
-      if (inviteCode !== 'AmaneKanataSimp') {
+      if (inviteCode !== 'SorasakiHinaSimp') {
         this.$store.commit('main/error', 'Invalid invite code')
         return
       }
@@ -125,6 +126,9 @@ export default {
       if (error) {
         this.$store.commit('main/error', error.message)
       }
+    },
+    async showFlash () {
+      await this.$store.commit('main/warning', 'Invite code have been changed, please contact me to register')
     },
     handleRedirect (event) {
       switch (event) {

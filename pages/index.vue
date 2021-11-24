@@ -27,19 +27,19 @@
 export default {
   head: {
     title: 'Home'
+  },
+  created () {
+    this.handleAuth()
+  },
+  methods: {
+    async handleAuth () {
+      this.loading = true
+      await this.showFlash()
+      this.loading = false
+    },
+    async showFlash () {
+
+    }
   }
-  // created () {
-  //   this.handleAuth()
-  // },
-  // methods: {
-  //   async handleAuth () {
-  //     this.loading = true
-  //     await this.owo()
-  //     this.loading = false
-  //   },
-  //   async owo () {
-  //     await this.$store.commit('main/warning', 'Website is still under development')
-  //   }
-  // }
 }
 </script>
