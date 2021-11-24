@@ -101,7 +101,7 @@ export default {
     }
   },
   created () {
-    this.handleAuth()
+    this.handleFlash()
     this.$supabase.auth.onAuthStateChange(async (event, session) => {
       await this.request({ event, session })
     })
@@ -110,6 +110,10 @@ export default {
     async handleAuth () {
       this.loading = true
       await this.signUp()
+      this.loading = false
+    },
+    async handleFlash () {
+      this.loading = true
       await this.showFlash()
       this.loading = false
     },
