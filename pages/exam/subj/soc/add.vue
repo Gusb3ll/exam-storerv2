@@ -100,7 +100,9 @@ export default {
     },
     async handleAdd () {
       this.complete = true
-      await this.$supabase.from('soc').insert([{ key: this.key, ans: this.answer }], { onConflict: 'key' })
+      await this.$supabase
+        .from('soc')
+        .insert([{ key: this.key, ans: this.answer }], { onConflict: 'key' })
       await this.sleep(1000)
       this.complete = false
     }

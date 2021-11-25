@@ -9,7 +9,17 @@
       <div class="grid grid-cols-5 grid-flow-row gap-x-12 gap-y-12 mt-16">
         <div v-for="i in subjects" :key="i.id">
           <nuxt-link :to="i.to">
-            <div class="examIndexanim2 text-center py-4 px-1 bg-white shadow-lg rounded-lg">
+            <div
+              class="
+                examIndexanim2
+                text-center
+                py-4
+                px-1
+                bg-white
+                shadow-lg
+                rounded-lg
+              "
+            >
               <a class="text-xl">
                 {{ i.title }}
               </a>

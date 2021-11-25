@@ -1,7 +1,16 @@
 <template>
   <div>
     <div
-      class="flex items-center justify-center min-h-full px-4 py-12 sm:px-6 lg:px-32"
+      class="
+        flex
+        items-center
+        justify-center
+        min-h-full
+        px-4
+        py-12
+        sm:px-6
+        lg:px-32
+      "
     >
       <div class="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-lg">
         <div>

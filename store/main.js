@@ -12,6 +12,11 @@ export const mutations = {
       state.routeloading = payload
     }
   },
+  notice (state, payload) {
+    state.flash.active = true
+    state.flash.color = 'bg-indigo-600'
+    state.flash.title = payload
+  },
   success (state, payload) {
     state.flash.active = true
     state.flash.color = 'bg-green-600'

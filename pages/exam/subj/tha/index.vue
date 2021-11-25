@@ -88,7 +88,11 @@ export default {
   methods: {
     async handleSearch () {
       this.loading = true
-      const { data } = await this.$supabase.from('tha').select('ans').range(0, 0).eq('key', this.search)
+      const { data } = await this.$supabase
+        .from('tha')
+        .select('ans')
+        .range(0, 0)
+        .eq('key', this.search)
       this.result = data
       this.loading = false
     },

@@ -86,14 +86,23 @@ export default {
     title: 'Liveex'
   },
   created () {
+    this.handleFlash()
     this.FetchDB()
   },
   methods: {
+    async handleFlash () {
+      this.loading = true
+      await this.showFlash()
+      this.loading = false
+    },
     async FetchDB () {
       this.loading = true
       const { data } = await this.$supabase.from('liveex').select('*')
       this.exam = data
       this.loading = false
+    },
+    async showFlash () {
+      await this.$store.commit('main/notice', 'Current subject : None')
     }
   }
 }

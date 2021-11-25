@@ -99,7 +99,9 @@ export default {
     },
     async handleAdd () {
       this.complete = true
-      await this.$supabase.from('liveex').insert([{ qe: this.qe, ans: this.answer }])
+      await this.$supabase
+        .from('liveex')
+        .insert([{ qe: this.qe, ans: this.answer }])
       await this.sleep(1000)
       this.complete = false
     }
