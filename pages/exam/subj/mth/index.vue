@@ -91,7 +91,7 @@ export default {
       const { data } = await this.$supabase
         .from('mth')
         .select('ans')
-        .range(0, 0)
+        .range(0, 5)
         .eq('key', this.search)
       this.result = data
       this.loading = false
