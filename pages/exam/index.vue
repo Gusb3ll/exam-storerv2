@@ -44,7 +44,7 @@ export default {
         },
         {
           id: 2,
-          title: 'ฟิสิกส์',
+          title: 'ฟิสิกส์ปรับปรุง 2560',
           to: '/exam/subj/phy'
         },
         {
@@ -72,11 +72,11 @@ export default {
           title: 'อังกฤษ',
           to: '/exam/subj/eng'
         },
-        // {
-        //   id: 8,
-        //   title: 'สุขศึกษา',
-        //   to: '/exam/subj/s1'
-        // },
+        {
+          id: 8,
+          title: 'สุขศึกษา',
+          to: '/exam/subj/s1'
+        },
         // {
         //   id: 9,
         //   title: 'พลศึกษา',
@@ -89,7 +89,7 @@ export default {
         // },
         {
           id: 11,
-          title: 'วิทยาศาสตร์',
+          title: 'วิทยาศาสตร์ (ชีวภาพ)',
           to: '/exam/subj/sci'
         },
         {
