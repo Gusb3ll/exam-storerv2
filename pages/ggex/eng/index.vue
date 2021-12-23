@@ -18,10 +18,10 @@
             English midterm exam
           </h2>
         </div>
-        <div class="mt-8 space-y-6">
+        <div class="mt-8 space-y-12">
           <div v-for="i in exam" :key="i.id">
-            <div class="-space-y-px rounded-md shadow-sm">
-              <div>
+            <div class="-space-y-px rounded-md shadow-lg py-2">
+              <div class="font-bold">
                 {{ i.qe }}
               </div>
               <div class="pt-2">
