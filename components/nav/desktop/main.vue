@@ -44,12 +44,10 @@
               </h3>
 
               <div class="buttons">
-                <template v-if="$store.state.auth.user">
-                  <nuxt-link to="/ggex/eng/">
-                    <a class="nav-button">
-                      <ArchiveIcon class="icon" /> English</a>
-                  </nuxt-link>
-                </template>
+                <nuxt-link to="/ggex/eng/">
+                  <a class="nav-button">
+                    <ArchiveIcon class="icon" /> English</a>
+                </nuxt-link>
               </div>
             </div>
           </div>
