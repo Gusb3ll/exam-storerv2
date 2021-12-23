@@ -36,6 +36,21 @@
                   </nuxt-link>
                 </template>
               </div>
+
+              <h3
+                class="px-3 mt-2 mb-2 text-xs font-semibold leading-4 tracking-wider text-gray-500 uppercase dark:text-gray-200"
+              >
+                Midterm exam
+              </h3>
+
+              <div class="buttons">
+                <template v-if="$store.state.auth.user">
+                  <nuxt-link to="/ggex/eng/">
+                    <a class="nav-button">
+                      <ArchiveIcon class="icon" /> English</a>
+                  </nuxt-link>
+                </template>
+              </div>
             </div>
           </div>
         </nav>

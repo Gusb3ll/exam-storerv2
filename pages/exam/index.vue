@@ -3,7 +3,7 @@
     <div class="mx-auto">
       <div class="my-8">
         <h1 class="text-4xl text-center font-500 examIndexanim1">
-          Please select subjects
+          Select your subject
         </h1>
       </div>
       <div class="grid grid-cols-5 grid-flow-row gap-x-12 gap-y-12 mt-16">
@@ -13,14 +13,14 @@
               class="
                 examIndexanim2
                 text-center
-                py-4
-                px-1
+                py-8
+                px-4
                 bg-white
                 shadow-lg
                 rounded-lg
               "
             >
-              <a class="text-xl">
+              <a class="xl:text-xl text-lg">
                 {{ i.title }}
               </a>
             </div>
@@ -39,7 +39,7 @@ export default {
       subjects: [
         {
           id: 1,
-          title: 'คณิตศาสตร์',
+          title: 'คณิตศาสตร์ปรับปรุง 2560',
           to: '/exam/subj/mth'
         },
         {
@@ -49,13 +49,13 @@ export default {
         },
         {
           id: 3,
-          title: 'ชีววิทยา',
-          to: '/exam/subj/bio'
+          title: 'เคมี',
+          to: '/exam/subj/chm'
         },
         {
           id: 4,
-          title: 'เคมี',
-          to: '/exam/subj/chm'
+          title: 'ชีววิทยา',
+          to: '/exam/subj/bio'
         },
         {
           id: 5,
@@ -77,48 +77,27 @@ export default {
           title: 'สุขศึกษา',
           to: '/exam/subj/s1'
         },
-        // {
-        //   id: 9,
-        //   title: 'พลศึกษา',
-        //   to: '/exam/subj/s2'
-        // },
-        // {
-        //   id: 10,
-        //   title: 'ฟิสิกส์ - 2560',
-        //   to: '/exam/subj/phy2560'
-        // },
         {
-          id: 11,
+          id: 9,
           title: 'วิทยาศาสตร์ (ชีวภาพ)',
           to: '/exam/subj/sci'
         },
         {
-          id: 12,
+          id: 10,
           title: 'ดาราศาสตร์',
           to: '/exam/subj/ast'
         }
-        // {
-        //   id: 13,
-        //   title: 'สังคมศึกษา - thk',
-        //   to: '/exam/subj/socThk'
-        // },
-        // {
-        //   id: 14,
-        //   title: 'เทคโนโลยี',
-        //   to: '/exam/subj/techno'
-        // }
       ]
     }
   },
   head: {
-    title: 'Please select your subjects'
+    title: 'Select subject'
   },
   mounted () {
-    this.examIndexanim1()
-    this.examIndexanim2()
+    this.examIndexanim()
   },
   methods: {
-    examIndexanim1 () {
+    examIndexanim () {
       this.$anime({
         targets: '.examIndexanim1',
         opacity: [0, 1],
@@ -127,8 +106,6 @@ export default {
         delay: 0,
         easing: 'easeOutQuint'
       })
-    },
-    examIndexanim2 () {
       this.$anime({
         targets: '.examIndexanim2',
         opacity: [0, 1],

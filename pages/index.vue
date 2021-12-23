@@ -11,7 +11,7 @@
           Exam storage
         </h1>
         <h1 class="text-sm font-medium text-gray-500">
-          By Gusbell
+          By Gusbell <br> Update 1.1
         </h1>
       </div>
     </div>

@@ -54,14 +54,17 @@
           </div>
         </div>
       </div>
-      <div class="mt-8">
+      <div v-if="result" class="mt-8">
         <h1 class="text-3xl text-center font-500">
           Answer
         </h1>
-        <h1 v-if="search" class="text-3xl text-center font-500 mt-4">
+        <h1 class="text-3xl text-center font-500 mt-4">
           <div v-for="i in result" :key="i.ans">
             {{ i.ans }}
           </div>
+        </h1>
+        <h1 class="text-2xl text-center font-500 mt-6">
+          ถ้ามีหลายคำตอบให้ยึดอันล่างสุด
         </h1>
       </div>
     </div>
@@ -80,10 +83,7 @@ export default {
     }
   },
   head: {
-    title: 'Phy'
-  },
-  async created () {
-    await this.FetchDB()
+    title: 'Physic'
   },
   methods: {
     async handleSearch () {
@@ -94,12 +94,6 @@ export default {
         .range(0, 5)
         .eq('key', this.search)
       this.result = data
-      this.loading = false
-    },
-    async FetchDB () {
-      this.loading = true
-      const { data } = await this.$supabase.from('phy').select('*')
-      this.exam = data
       this.loading = false
     }
   }
