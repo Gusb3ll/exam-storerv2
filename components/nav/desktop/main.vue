@@ -48,6 +48,10 @@
                   <a class="nav-button">
                     <ArchiveIcon class="icon" /> English</a>
                 </nuxt-link>
+                <nuxt-link to="/ggex/mth/">
+                  <a class="nav-button">
+                    <ArchiveIcon class="icon" /> Math</a>
+                </nuxt-link>
               </div>
             </div>
           </div>
