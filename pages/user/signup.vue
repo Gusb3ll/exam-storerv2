@@ -128,7 +128,7 @@ export default {
     },
     async signUp () {
       const { email, password, passwordConfirm, inviteCode } = this
-      if (inviteCode !== 'SorasakiHinaSimp') {
+      if (inviteCode !== 'ChangeTheWorld') {
         this.$store.commit('main/error', 'Invalid invite code')
         return
       }
