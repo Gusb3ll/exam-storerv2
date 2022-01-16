@@ -20,7 +20,7 @@
 
       <footer class="footer relative py-1 bottom-1">
         <h1 class="text-gray-500 text-md text-center">
-          © 2021 | Gusbell
+          © 2022 | Gusbell
         </h1>
       </footer>
     </div>
