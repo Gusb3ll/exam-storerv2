@@ -75,6 +75,7 @@
 
 <script>
 export default {
+  middleware: ['pageGuard'],
   data () {
     return {
       search: '',
