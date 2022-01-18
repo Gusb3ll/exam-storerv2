@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <div :class="open" class="">
       <button class="m-4 text-2xl font-bold text-black outline-none dark:text-white" @click="tog()">
         &#9776;
@@ -90,20 +90,18 @@
         </div>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
 import {
   HomeIcon,
-  ArchiveIcon,
-  AnnotationIcon
+  ArchiveIcon
 } from '@vue-hero-icons/outline'
 export default {
   components: {
     HomeIcon,
-    ArchiveIcon,
-    AnnotationIcon
+    ArchiveIcon
   },
   data () {
     return {
