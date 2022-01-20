@@ -7,17 +7,17 @@
         EXS
       </div>
       <div class="my-auto">
-        <h1 class="text-xl font-semibold text-gray-600 xl:flex sm:hidden">
+        <h1 class="text-xl font-semibold text-gray-600 lg:flex hidden">
           Exam storage
         </h1>
-        <h1 class="text-sm font-medium text-gray-500 xl:flex sm:hidden">
+        <h1 class="text-sm font-medium text-gray-500 lg:flex hidden">
           By Gusbell <br> Update 1.2
         </h1>
       </div>
     </div>
 
     <div
-      class="absolute flex items-center justify-center opacity-15 dark:hidden"
+      class="absolute flex items-center justify-center opacity-15"
     >
       <img src="~/assets/hina.png" class="w-256">
     </div>
