@@ -7,11 +7,11 @@
         EXS
       </div>
       <div class="my-auto">
-        <h1 class="text-xl font-semibold text-gray-600">
+        <h1 class="text-xl font-semibold text-gray-600 xl:flex sm:hidden">
           Exam storage
         </h1>
-        <h1 class="text-sm font-medium text-gray-500">
-          By Gusbell <br> Update 1.1
+        <h1 class="text-sm font-medium text-gray-500 xl:flex sm:hidden">
+          By Gusbell <br> Update 1.2
         </h1>
       </div>
     </div>

@@ -21,10 +21,10 @@
         <div class="mt-8 space-y-12">
           <div v-for="i in exam" :key="i.id">
             <div class="-space-y-px rounded-md shadow-lg py-2">
-              <div class="font-bold">
+              <div class="font-bold p-2">
                 {{ i.qe }}
               </div>
-              <div class="pt-2">
+              <div class="p-2">
                 Ans : {{ i.ans }}
               </div>
             </div>
