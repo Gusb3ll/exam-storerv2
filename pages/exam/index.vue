@@ -6,7 +6,7 @@
           Select your subject
         </h1>
       </div>
-      <div class="grid grid-cols-5 grid-flow-row gap-x-12 gap-y-12 mt-16">
+      <div class="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 grid-flow-row gap-x-12 gap-y-12 mt-16">
         <div v-for="i in subjects" :key="i.id">
           <nuxt-link :to="i.to">
             <div
@@ -18,6 +18,8 @@
                 bg-white
                 shadow-lg
                 rounded-lg
+                max-w-lg
+                min-h-32
               "
             >
               <a class="xl:text-xl text-lg">

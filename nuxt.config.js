@@ -1,11 +1,9 @@
 export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+
   ssr: false,
 
-  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: ' %s | EXS',
     title: 'EXS',
@@ -23,39 +21,33 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/global.css'
   ],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/supabase.client.js'
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/eslint
+    'nuxt-swc',
     '@nuxtjs/eslint-module',
     'nuxt-windicss',
     'nuxt-animejs'
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios'
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    baseURL: 'https://exam.gusbell.tech', // Used as fallback if no runtime config is provide
-    https: true
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: '/'
+    }
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
 
