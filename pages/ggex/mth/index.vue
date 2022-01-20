@@ -31,7 +31,7 @@
           </div>
 
           <div>
-            <template v-if="$store.state.auth.user">
+            <!-- <template v-if="$store.state.auth.user">
               <div class="pt-4">
                 <nuxt-link to="/ggex/mth/add">
                   <button
@@ -49,7 +49,7 @@
                   </button>
                 </nuxt-link>
               </div>
-            </template>
+            </template> -->
             <div class="pt-4">
               <button
                 class="search-button"
