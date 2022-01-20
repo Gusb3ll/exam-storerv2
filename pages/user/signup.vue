@@ -48,7 +48,7 @@
               >
             </div>
             <div>
-              <label for="password" class="sr-only">Password Confirm</label>
+              <label for="password" class="sr-only">Confirm Password</label>
               <input
                 id="passwordConfirm"
                 v-model="passwordConfirm"
@@ -105,12 +105,10 @@ export default {
       email: null,
       password: null,
       passwordConfirm: null,
-      inviteCode: null,
-      loading: false
+      inviteCode: null
     }
   },
   created () {
-    this.handleFlash()
     this.$supabase.auth.onAuthStateChange(async (event, session) => {
       await this.request({ event, session })
     })
@@ -119,11 +117,6 @@ export default {
     async handleAuth () {
       this.loading = true
       await this.signUp()
-      this.loading = false
-    },
-    async handleFlash () {
-      this.loading = true
-      await this.showFlash()
       this.loading = false
     },
     async signUp () {
@@ -140,12 +133,6 @@ export default {
       if (error) {
         this.$store.commit('main/error', error.message)
       }
-    },
-    async showFlash () {
-      await this.$store.commit(
-        'main/warning',
-        'Invite code have been changed, please contact me to register'
-      )
     },
     handleRedirect (event) {
       switch (event) {

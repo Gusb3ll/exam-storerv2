@@ -77,8 +77,7 @@ export default {
   data () {
     return {
       email: null,
-      password: null,
-      loading: false
+      password: null
     }
   },
   head: {
