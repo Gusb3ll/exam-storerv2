@@ -64,7 +64,7 @@
             </nuxt-link>
           </div>
         </div>
-        <template v-if="complete">
+        <template v-if="loading">
           <h1 class="text-center text-3xl font-500">
             Added items to the database
           </h1>
@@ -86,9 +86,7 @@ export default {
     return {
       key: '',
       answer: '',
-      result: null,
-      loading: false,
-      complete: false
+      loading: false
     }
   },
   head: {
@@ -99,19 +97,13 @@ export default {
       return new Promise(resolve => setTimeout(resolve, ms))
     },
     async handleAdd () {
-      this.complete = true
+      this.loading = true
       await this.$supabase
         .from('sci')
-        .insert([{ key: this.key, ans: this.answer }], { onConflict: 'key' })
-      await this.sleep(1000)
-      this.complete = false
+        .insert([{ key: this.key, ans: this.answer }])
+      await this.sleep(500)
+      this.loading = false
     }
   }
 }
 </script>
-
-<style>
-.back-button {
-  @apply relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-red-600 border border-transparent rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
-}
-</style>
