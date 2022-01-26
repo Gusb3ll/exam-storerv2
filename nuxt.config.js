@@ -22,7 +22,7 @@ export default {
   },
 
   css: [
-    '~/assets/global.css'
+    '~/assets/css/global.css'
   ],
 
   plugins: [
