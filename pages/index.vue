@@ -16,9 +16,7 @@
       </div>
     </div>
 
-    <div
-      class="absolute flex items-center justify-center opacity-15"
-    >
+    <div class="absolute flex items-center justify-center opacity-15">
       <img src="~/assets/hina.png" class="w-256">
     </div>
   </div>

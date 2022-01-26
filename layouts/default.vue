@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-screen overflow-hidden bg-gray-50 dark:bg-hsl-back">
+  <div class="flex h-screen overflow-hidden">
     <div class="hidden xl:flex">
       <NavDesktopMain />
     </div>

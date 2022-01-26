@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-html {
+html, body {
   font-family: 'Quicksand', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #00000005;
 }
 
 .page-enter-active {
