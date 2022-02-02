@@ -46,7 +46,7 @@ export default {
         },
         {
           id: 2,
-          title: 'ฟิสิกส์ปรับปรุง 2560',
+          title: 'ฟิสิกส์ปรับปรุง 2560 (ธรรมศาสตร์)',
           to: '/exam/subj/phy'
         },
         {
@@ -61,7 +61,7 @@ export default {
         },
         {
           id: 5,
-          title: 'สังคมศึกษา',
+          title: 'สังคมศึกษา (ธรรมศาสตร์)',
           to: '/exam/subj/soc'
         },
         {
