@@ -82,6 +82,9 @@ export default {
       loading: false
     }
   },
+  mounted () {
+    this.customFlash()
+  },
   head: {
     title: 'Biology'
   },
@@ -96,6 +99,9 @@ export default {
       this.result = data
       this.loading = false
     }
+    customFlash () {
+      this.$store.commit('main/notice', 'ตอนนี้คำตอบชีวะตันหลายข้อ + ผิดหลายข้อ ถ้ากลับบ้านแล้วจะรีบนั่งแก้ให้น้า TT')
+   }
   }
 }
 </script>
