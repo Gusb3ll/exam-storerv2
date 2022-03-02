@@ -37,7 +37,7 @@
                 <h3
                   class="px-3 mt-2 mb-2 text-xs font-semibold leading-4 tracking-wider text-gray-500 uppercase dark:text-gray-200"
                 >
-                  Midterm exam
+                  Final exam
                 </h3>
 
                 <div class="buttons">
