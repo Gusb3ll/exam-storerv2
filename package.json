@@ -33,6 +33,6 @@
     "eslint-plugin-nuxt": "^3.1.0",
     "nuxt-animejs": "^1.2.2",
     "nuxt-swc": "^0.1.0",
-    "nuxt-windicss": "2.2.2"
+    "nuxt-windicss": "2.2.10"
   }
 }
